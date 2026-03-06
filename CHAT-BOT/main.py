@@ -2,7 +2,7 @@
 import streamlit as st
 from openai import OpenAI
 
-modelo_ia = OpenAI(api_key="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")
+modelo_ia = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 st.write("# Fala galera do LinkedIn :)")
 st.write("# ChatBot LB")
@@ -48,5 +48,6 @@ if texto_usuario:
 
 
 # mensagem1 = {"role": "assistant", "content": "Bora aprender Python"}
+
 
 
